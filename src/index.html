@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <div class="alert-error">
-    Digite somente números
+  <div class="alert-error" id="alert-error">
+    <p>Digite somente números</p>
   </div>
 
   <div class="container">
@@ -24,19 +24,19 @@
         </div>
 
         <div class="input-wrapper">
-          <label for="height">Altura (m)</label>
+          <label for="height">Altura (cm)</label>
           <input type="text" id="height" placeholder="165">
         </div>
 
-        <button type="submit">Calcular IMC <img src="assets/arrow.svg" alt="seta apontando para direita"></button>
+        <button type="submit" id="btnCalculateIMC">Calcular IMC <img src="assets/arrow.svg" alt="seta apontando para direita"></button>
       </form>
     </main>
   </div>
 
-  <div class="modal-wrapper">
+  <div class="modal-wrapper" id="modal-wrapper">
     <div class="modal card">
-      <h2 class="title">Seu IMC é de 28</h2>
-      <button class="close"><img src="assets/close.svg" alt="imagem para fechar o popup"></button>
+      <h2 class="title" id="titleImc">Seu IMC é de 28</h2>
+      <button class="close" id="close-modal"><img src="assets/close.svg" alt="imagem para fechar o popup"></button>
     </div>
   </div>
 </body>
